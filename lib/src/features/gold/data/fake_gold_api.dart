@@ -5,9 +5,9 @@ import 'dart:math';
 Stream<double> getGoldPriceStream() {
   Random random = Random();
   return Stream<double>.periodic(
-    const Duration(seconds: 1),
+    const Duration(seconds: 2),
     (int _) {
-      return 60 + random.nextDouble() * 20;
+      return 50 + random.nextDouble() * 20;
     },
   );
 }
